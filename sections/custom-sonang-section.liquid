@@ -1,0 +1,63 @@
+{%- for block in section.blocks -%}
+
+{%- case block.type -%}
+      {%- when 'title' -%}
+        <h2
+          class="banner__title inline-richtext"
+          {{ block.shopify_attributes }}
+        >
+          {{ block.settings.title }}
+        </h2>
+      {%- when 'description' -%}
+        <div class="banner__description">
+          <p>{{ block.settings.description }}</p>
+        </div>
+    {%- endcase -%} 
+{%- endfor -%}
+
+
+{% schema %}
+    {
+      "name": "custom-sonang-section",
+      "tag": "section",
+      "class": "sonang",
+      "settings": [],
+      "blocks": [
+        {
+          "type": "title",
+          "name": "title",
+          "settings": [
+            {
+              "type": "text",
+              "label": "Title",
+              "id": "title"
+            }
+          ]
+        },
+        {
+          "type": "description",
+          "name": "description",
+          "settings": [
+            {
+              "type": "text",
+              "label": "Description",
+              "id": "description"
+            }
+          ]
+        }
+      ],
+      "presets": [
+        {
+          "name": "My New Section",
+          "blocks": [
+            {
+            "type": "title"
+            },
+            {
+            "type": "description"
+            }
+            ]
+        }
+      ]
+    }
+    {% endschema %}
