@@ -1,23 +1,39 @@
-{%- for block in section.blocks -%}
-  {%- case block.type -%}
-    {%- when 'title' -%}
-      <h2 class="banner__title inline-richtext" {{ block.shopify_attributes }}>
-        {{ block.settings.title }}
-      </h2>
-    {%- when 'description' -%}
-      <div class="banner__description">
-        <p>{{ block.settings.description }}</p>
-      </div>
-  {%- endcase -%}
-{%- endfor -%}
+{{ 'section-custom-sonang-section.css' | asset_url | stylesheet_tag }}
+
+<div class="sonang">
+  {%- for block in section.blocks -%}
+    {%- case block.type -%}
+      {%- when 'title' -%}
+        <h2 class="banner__title inline-richtext">
+          {{ block.settings.title }}
+        </h2>
+      {%- when 'description' -%}
+        <div class="banner__description">
+          <p>{{ block.settings.description }}</p>
+        </div>
+    {%- endcase -%}
+  {%- endfor -%}
+
+  <div class="sonang__img">
+    {{
+      section.settings.hero | image_url: width: 300 | image_tag
+    }}
+  </div>
+</div>
 
 
 {% schema %}
   {
-    "name": "custom-sonang-section",
+    "name": "Custom Sonang Section",
     "tag": "section",
     "class": "sonang",
-    "settings": [],
+    "settings": [
+      {
+        "type": "image_picker",
+        "label": "hero",
+        "id": "hero"
+      }
+    ],
     "blocks": [
       {
         "type": "title",
@@ -43,7 +59,7 @@
     ],
     "presets": [
       {
-        "name": "My New Section",
+        "name": "Custom Sonang Section",
         "blocks": [
           {
             "type": "title"

@@ -1,0 +1,9 @@
+.sonang {
+  max-width: 1084px;
+  margin: 0 auto;
+}
+
+.sonang__img img {
+  width: 100%;
+  height: auto;
+}
