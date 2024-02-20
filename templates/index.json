@@ -3,18 +3,17 @@
     "custom-sonang": {
       "type": "custom-sonang-section",
       "blocks": {
-        "title": {
+        "title_KrKpTx": {
           "type": "title",
           "settings": {
-            "title": "Sonang Don"
-          }
-        },
-        "description": {
-          "type": "description",
-          "settings": {
-            "description": "Sonang Don is very cool."
+            "title": "Testing"
           }
         }
+      },
+      "block_order": [
+        "title_KrKpTx"
+      ],
+      "settings": {
       }
     },
     "image_banner": {
@@ -31,7 +30,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
+            "button_link_1": "shopify:\/\/collections\/all",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
@@ -39,7 +38,10 @@
           }
         }
       },
-      "block_order": ["heading", "button"],
+      "block_order": [
+        "heading",
+        "button"
+      ],
       "settings": {
         "image_overlay_opacity": 40,
         "image_height": "large",
@@ -82,5 +84,9 @@
       }
     }
   },
-  "order": ["custom-sonang", "image_banner", "featured_collection"]
+  "order": [
+    "custom-sonang",
+    "image_banner",
+    "featured_collection"
+  ]
 }
