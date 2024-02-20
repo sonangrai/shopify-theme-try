@@ -16,12 +16,9 @@
           }
         }
       },
-      "block_order": [
-        "title_pDVzLU",
-        "description_qeKUEU"
-      ],
+      "block_order": ["title_pDVzLU", "description_qeKUEU"],
       "settings": {
-        "hero": "shopify:\/\/shop_images\/theme_cover_image.jpg"
+        "hero": "shopify://shop_images/theme_cover_image.jpg"
       }
     },
     "image_banner": {
@@ -38,7 +35,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Shop all",
-            "button_link_1": "shopify:\/\/collections\/all",
+            "button_link_1": "shopify://collections/all",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
@@ -46,10 +43,7 @@
           }
         }
       },
-      "block_order": [
-        "heading",
-        "button"
-      ],
+      "block_order": ["heading", "button"],
       "settings": {
         "image_overlay_opacity": 40,
         "image_height": "large",
