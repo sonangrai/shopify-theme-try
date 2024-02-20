@@ -5,11 +5,14 @@
 }
 
 .sonang__description {
-  max-height: 1000000px;
-  height: 190px;
-  transition: 0.3s;
+  height: 100px;
+  transition: height 3s;
   overflow: hidden;
   position: relative;
+}
+
+.sonang__description.active {
+  height: auto;
 }
 
 .sonang__img {
