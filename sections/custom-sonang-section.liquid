@@ -4,12 +4,13 @@
   {%- for block in section.blocks -%}
     {%- case block.type -%}
       {%- when 'title' -%}
-        <h2 class="banner__title inline-richtext">
+        <h2 class="sonang__title">
           {{ block.settings.title }}
         </h2>
       {%- when 'description' -%}
-        <div class="banner__description">
+        <div class="sonang__description">
           <p>{{ block.settings.description }}</p>
+          <button class="button button-floating" data-btn-more="less">Show More</button>
         </div>
     {%- endcase -%}
   {%- endfor -%}
