@@ -1,0 +1,42 @@
+.s-header {
+  padding: 20px 0;
+}
+
+.siteLogo a {
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--black);
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.header__flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.s-nav__list {
+  list-style: none;
+  display: flex;
+  gap: 60px;
+}
+
+.s-nav__item {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0.08em;
+  text-align: left;
+  text-decoration: none;
+  color: var(--black);
+  font-weight: bold;
+}
+
+.header__action {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
