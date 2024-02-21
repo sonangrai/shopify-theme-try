@@ -5,17 +5,41 @@
 .siteLogo a {
   text-decoration: none;
   font-weight: bolder;
-  font-size: 30px;
-  line-height: 30px;
+  font-size: 20px;
+  line-height: 20px;
   color: var(--black);
   text-transform: uppercase;
   font-style: italic;
+
+  @media screen and (min-width: 768px) {
+    font-size: 30px;
+    line-height: 30px;
+  }
 }
 
 .header__flex {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.header__nav {
+  @media screen and (min-width: 998px) {
+    order: 2;
+  }
+}
+
+.hamburger {
+  @media screen and (min-width: 998px) {
+    display: none;
+  }
+}
+
+.s-nav {
+  display: none;
+  @media screen and (min-width: 998px) {
+    display: block;
+  }
 }
 
 .s-nav__list {
@@ -39,4 +63,14 @@
   display: flex;
   gap: 20px;
   align-items: center;
+  @media screen and (min-width: 998px) {
+    order: 3;
+  }
+}
+
+.header__action a:first-child {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 }

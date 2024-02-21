@@ -1,16 +1,17 @@
 /* Layout */
 
 .container {
-  max-width: 1084px;
   margin: 0 auto;
+  width: 96%;
+  max-width: 1084px;
 }
 
 /* Links */
 
-.link {
+.lnk {
   text-decoration: none;
   color: #707070;
 }
-.link.link-underline {
+.lnk.lnk-underline {
   text-decoration: underline;
 }

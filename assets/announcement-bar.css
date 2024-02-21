@@ -4,8 +4,12 @@
 
 .announcement__flex {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 3px;
+
+  @media screen and (min-width: 480px) {
+    justify-content: space-between;
+  }
 }
 
 .announcement__flex .link {
@@ -13,6 +17,13 @@
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.01em;
+}
+
+.locator {
+  display: none;
+  @media screen and (min-width: 480px) {
+    display: block;
+  }
 }
 
 .announcement__returns {
@@ -28,9 +39,13 @@
 }
 
 .announcement__links {
-  display: flex;
+  display: none;
   align-items: center;
   gap: 10px;
+
+  @media screen and (min-width: 480px) {
+    display: flex;
+  }
 }
 
 .seperator {
