@@ -1,0 +1,16 @@
+/* Layout */
+
+.container {
+  max-width: 1084px;
+  margin: 0 auto;
+}
+
+/* Links */
+
+.link {
+  text-decoration: none;
+  color: #707070;
+}
+.link.link-underline {
+  text-decoration: underline;
+}
