@@ -1,26 +1,5 @@
 {
   "sections": {
-    "custom_sonang_section_rVhqk4": {
-      "type": "custom-sonang-section",
-      "blocks": {
-        "title_pDVzLU": {
-          "type": "title",
-          "settings": {
-            "title": "Custom Sonang Section"
-          }
-        },
-        "description_qeKUEU": {
-          "type": "description",
-          "settings": {
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc sed velit dignissim sodales ut eu sem. Maecenas volutpat blandit aliquam etiam erat. Adipiscing at in tellus integer feugiat. Etiam tempor orci eu lobortis elementum nibh tellus. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Faucibus a pellentesque sit amet porttitor eget dolor. Dolor magna eget est lorem ipsum dolor sit amet consectetur. Turpis in eu mi bibendum neque egestas. Nibh venenatis cras sed felis. Ornare arcu dui vivamus arcu felis bibendum. Eu feugiat pretium nibh ipsum. Sapien eget mi proin sed libero enim. Enim facilisis gravida neque convallis. Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque.  Quisque egestas diam in arcu cursus euismod quis. Morbi blandit cursus risus at ultrices mi tempus. Quisque non tellus orci ac auctor augue. Aliquam faucibus purus in massa. Massa id neque aliquam vestibulum morbi blandit cursus risus at. Ac auctor augue mauris augue neque gravida. Sit amet cursus sit amet dictum sit amet justo donec. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus et."
-          }
-        }
-      },
-      "block_order": ["title_pDVzLU", "description_qeKUEU"],
-      "settings": {
-        "hero": "shopify://shop_images/theme_cover_image.jpg"
-      }
-    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -35,7 +14,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
+            "button_link_1": "shopify:\/\/collections\/all",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
@@ -43,7 +22,10 @@
           }
         }
       },
-      "block_order": ["heading", "button"],
+      "block_order": [
+        "heading",
+        "button"
+      ],
       "settings": {
         "image_overlay_opacity": 40,
         "image_height": "large",
@@ -84,11 +66,35 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
+    },
+    "custom_sonang_section_rVhqk4": {
+      "type": "custom-sonang-section",
+      "blocks": {
+        "title_pDVzLU": {
+          "type": "title",
+          "settings": {
+            "title": "Custom Sonang Section"
+          }
+        },
+        "description_qeKUEU": {
+          "type": "description",
+          "settings": {
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc sed velit dignissim sodales ut eu sem. Maecenas volutpat blandit aliquam etiam erat. Adipiscing at in tellus integer feugiat. Etiam tempor orci eu lobortis elementum nibh tellus. Mollis nunc sed id semper risus in hendrerit gravida rutrum. Faucibus a pellentesque sit amet porttitor eget dolor. Dolor magna eget est lorem ipsum dolor sit amet consectetur. Turpis in eu mi bibendum neque egestas. Nibh venenatis cras sed felis. Ornare arcu dui vivamus arcu felis bibendum. Eu feugiat pretium nibh ipsum. Sapien eget mi proin sed libero enim. Enim facilisis gravida neque convallis. Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque.  Quisque egestas diam in arcu cursus euismod quis. Morbi blandit cursus risus at ultrices mi tempus. Quisque non tellus orci ac auctor augue. Aliquam faucibus purus in massa. Massa id neque aliquam vestibulum morbi blandit cursus risus at. Ac auctor augue mauris augue neque gravida. Sit amet cursus sit amet dictum sit amet justo donec. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus et."
+          }
+        }
+      },
+      "block_order": [
+        "title_pDVzLU",
+        "description_qeKUEU"
+      ],
+      "settings": {
+        "hero": "shopify:\/\/shop_images\/theme_cover_image.jpg"
+      }
     }
   },
   "order": [
-    "custom_sonang_section_rVhqk4",
     "image_banner",
-    "featured_collection"
+    "featured_collection",
+    "custom_sonang_section_rVhqk4"
   ]
 }

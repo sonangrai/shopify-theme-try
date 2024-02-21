@@ -10,7 +10,23 @@
     },
     "header": {
       "type": "header",
+      "blocks": {
+        "nav_84GnFK": {
+          "type": "nav",
+          "settings": {
+            "men": true,
+            "women": true,
+            "kids": true,
+            "activities": true,
+            "explore": true
+          }
+        }
+      },
+      "block_order": [
+        "nav_84GnFK"
+      ],
       "settings": {
+        "logo": "Sonang Test"
       }
     }
   },

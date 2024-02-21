@@ -7,21 +7,44 @@
     <div class="header__nav">
       <nav class="s-nav">
         <ul class="s-nav__list">
-          <li>
-            <a class="s-nav__item" href="#!">Men</a>
-          </li>
-          <li>
-            <a class="s-nav__item" href="#!">Women</a>
-          </li>
-          <li>
-            <a class="s-nav__item" href="#!">Kids</a>
-          </li>
-          <li>
-            <a class="s-nav__item" href="#!">Activities</a>
-          </li>
-          <li>
-            <a class="s-nav__item" href="#!">Explore</a>
-          </li>
+          {% for block in section.blocks %}
+
+            {% case block.type %}
+
+              {% when 'nav' %}
+
+                {% if block.settings.men %}
+                  <li>
+                    <a class="s-nav__item" href="#!">Men</a>
+                  </li>
+                {% endif %}
+
+                {% if block.settings.women %}
+                  <li>
+                    <a class="s-nav__item" href="#!">Women</a>
+                  </li>
+                {% endif %}
+
+                {% if block.settings.kids %}
+                  <li>
+                    <a class="s-nav__item" href="#!">Kids</a>
+                  </li>
+                {% endif %}
+
+                {% if block.settings.activities %}
+                  <li>
+                    <a class="s-nav__item" href="#!">Activities</a>
+                  </li>
+                {% endif %}
+
+                {% if block.settings.explore %}
+                  <li>
+                    <a class="s-nav__item" href="#!">Explore</a>
+                  </li>
+                {% endif %}
+
+            {% endcase %}
+          {% endfor %}
         </ul>
       </nav>
 
@@ -100,7 +123,6 @@
     </div>
 
   </div>
-
 </div>
 
 {% schema %}
@@ -117,7 +139,44 @@
         "placeholder": "Logo"
       }
     ],
-    "blocks": [],
+    "blocks": [
+      {
+        "type": "nav",
+        "name": "nav",
+        "limit": 5,
+        "settings": [
+          {
+            "type": "checkbox",
+            "label": "Men",
+            "id": "men",
+            "default": true
+          },
+          {
+            "type": "checkbox",
+            "label": "Women",
+            "id": "women",
+            "default": true
+          },
+          {
+            "type": "checkbox",
+            "label": "Kids",
+            "id": "kids",
+            "default": true
+          },
+          {
+            "type": "checkbox",
+            "label": "Activities",
+            "id": "activities",
+            "default": true
+          }, {
+            "type": "checkbox",
+            "label": "Explore",
+            "id": "explore",
+            "default": true
+          }
+        ]
+      }
+    ],
     "presets": [
       {
         "name": "Header"
