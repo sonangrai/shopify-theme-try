@@ -55,7 +55,7 @@
         "view_all_style": "solid",
         "enable_desktop_slider": false,
         "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
+        "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
@@ -90,11 +90,19 @@
       "settings": {
         "hero": "shopify:\/\/shop_images\/theme_cover_image.jpg"
       }
+    },
+    "section_best_seller_kLW9cE": {
+      "type": "section-best-seller",
+      "settings": {
+        "title": "Best Seller",
+        "best_selling": "best-selling"
+      }
     }
   },
   "order": [
     "image_banner",
     "featured_collection",
-    "custom_sonang_section_rVhqk4"
+    "custom_sonang_section_rVhqk4",
+    "section_best_seller_kLW9cE"
   ]
 }

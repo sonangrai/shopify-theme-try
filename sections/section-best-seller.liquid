@@ -1,0 +1,82 @@
+{{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
+
+{% style %}
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    z-index: 9;
+    background: #000;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    color: #fff;
+    font-size: 12px
+  }
+
+  .swiper-button-prev.swiper-button-disabled,
+  .swiper-button-next.swiper-button-disabled {
+    display: none !important;
+  }
+{% endstyle %}
+
+
+<div class="container">
+  <h2 class="sectionTitle">
+    {{ section.settings.title }}
+  </h2>
+
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      {% for product in section.settings.best_selling.products %}
+        <div class="swiper-slide">
+          {% render 'card-product'
+            , card_product: product
+          %}
+        </div>
+      {% endfor %}
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+
+</div>
+
+
+<script src="{{ "swiper-bundle.min.js" |  asset_url }}" defer="defer"></script>
+<script
+  src="{{ "best-seller.js" |  asset_url  }}"
+  defer=""
+  defer></script>
+
+{% schema %}
+  {
+    "name": "Best Seller",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "text",
+        "label": "Title",
+        "id": "title",
+        "default": "Best Seller",
+        "placeholder": "Secition Title"
+      }, {
+        "type": "collection",
+        "label": "Best Selling",
+        "id": "best_selling"
+      }
+    ],
+    "blocks": [],
+    "presets": [
+      {
+        "name": "Best Seller"
+      }
+    ]
+  }
+{% endschema %}

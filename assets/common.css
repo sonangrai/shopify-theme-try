@@ -15,3 +15,12 @@
 .lnk.lnk-underline {
   text-decoration: underline;
 }
+
+/* Typography */
+.sectionTitle {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
