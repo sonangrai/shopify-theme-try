@@ -74,3 +74,23 @@
     display: block;
   }
 }
+
+.cart-icon {
+  position: relative;
+}
+
+.cart__count {
+  position: absolute;
+  top: 0;
+  left: 90%;
+  width: 16px;
+  height: 16px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  font-size: 12px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
